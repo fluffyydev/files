@@ -7,7 +7,7 @@ var fileTypes = [
     "text"
 ];
 
-var text = window.location.pathname.replace(/^\/+|\/+$/g, '');
+var text = window.location.pathname;
 if (text == undefined || text == "") { text = "nothing" };
 
 p.textContent = text;
