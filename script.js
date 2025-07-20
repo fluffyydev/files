@@ -1,13 +1,23 @@
-var p = document.getElementById("pText");
+var theDiv = document.getElementById("aDivFR");
 
-var fileTypes = [
-    "video",
-    "image",
-    "audio",
-    "text"
-];
+var list = {
+    mp4: ["hey", "cool", "naw", "yeh"]
+};
 
-var text = window.location.pathname;
-if (text == undefined || text == "") { text = "nothing" };
+// document.getElementById("").textContent = list["mp4"][1];
 
-p.textContent = text;
+var ext = ["mp4","videoDisplay1"]; // window.location.pathname.split('-');
+//  [file type]-[file name]
+if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); };
+
+if (ext[0] == "mp4") {
+    var video = document.createElement("video");
+    theDiv.appendChild(video);
+    var source = document.createElement("source");
+    source.src = "/storage/mp4/" + ext[1] + "." + "mp4";
+    source.type = "video/mp4";
+    video.controls = "controls";
+    video.innerHTML = "Video cannot load";
+    video.height = "650"
+    video.appendChild(source);
+}
