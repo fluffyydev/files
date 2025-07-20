@@ -3,7 +3,7 @@ var theDiv = document.getElementById("aDivFR");
 var ext = window.location.pathname.split('-');
 document.getElementById("aDivFR").textContent = ext;
 //  [file type]-[file name]
-if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); };
+if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); }
 
 if (ext[0] == "mp4") {
     var video = document.createElement("video");
