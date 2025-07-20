@@ -1,11 +1,5 @@
 var theDiv = document.getElementById("aDivFR");
 
-var list = {
-    mp4: ["hey", "cool", "naw", "yeh"]
-};
-
-// document.getElementById("").textContent = list["mp4"][1];
-
 var ext = window.location.pathname.split('-');
 document.getElementById("aDivFR").textContent = ext;
 //  [file type]-[file name]
