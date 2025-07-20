@@ -1,6 +1,7 @@
 var theDiv = document.getElementById("aDivFR");
 
-var ext = window.location.pathname.split('-');
+var ext = window.location.pathname
+ext = ext.slice(1, ext.length).split('-');
 document.getElementById("hmm").textContent = ext;
 //  [file type]-[file name]
 if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); }
