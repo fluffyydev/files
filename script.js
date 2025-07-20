@@ -1,7 +1,7 @@
 var theDiv = document.getElementById("aDivFR");
 
 var ext = window.location.pathname.split('-');
-document.getElementById("aDivFR").textContent = ext;
+document.getElementById("hmm").textContent = ext;
 //  [file type]-[file name]
 if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); }
 
