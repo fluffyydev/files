@@ -6,7 +6,7 @@ var list = {
 
 // document.getElementById("").textContent = list["mp4"][1];
 
-var ext = ["mp4","videoDisplay1"]; // window.location.pathname.split('-');
+var ext = window.location.pathname.split('-');
 //  [file type]-[file name]
 if (ext == undefined || ext == "") {  window.location.replace("https://www.fluffyy.dev"); };
 
